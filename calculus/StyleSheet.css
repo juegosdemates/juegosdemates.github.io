@@ -1,0 +1,63 @@
+html {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+}
+
+body {
+  background-image: url('img/fondo.jpg');
+}
+
+progress {
+  height: 50px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.selector {
+  font-size: 22px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button {
+  font-size: 26px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {
+  font-size: 22px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.green {padding: 2px 14px; background-color: #4CAF50;}
+.green2 {background-color: #4CAF50;}
+.red {background-color: #FF0000;}
+.blue {padding: 2px 14px; margin: 2px 1px; background-color: #0000FF;}
+.blueNumbers {background-color: #0000FF;}
+
+.text {
+  font-family: "Times New Roman";
+  font-size: 22px;
+  color: black;
+  text-align: left;
+}

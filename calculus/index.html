@@ -1,0 +1,64 @@
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Para mejorar el rendimiento en enventos onclick en pantallas táctiles -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Calculus</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+    <script src='js/howler.js'></script>
+    <script src="js/juego.js"></script>
+  </head>
+
+  <body>
+    <div id="div1">
+      <img src="img/yoshi.png" width="100" height="100">
+      <label for="FirstName" class='text'>Nombre: </label>
+      <input type="text" id="FirstName" name="firstName" class='text' size='20' maxlength='20'>
+      <select class="selector green" id="timeSelect">
+        <option value=0>Tiempo</option>
+        <option value=30>30 segundos</option>
+        <option value=60>60 segundos</option>
+        <option value=120>120 segundos</option>
+        <option value=180>180 segundos</option>
+      </select>
+      <select class="selector green" id="mySelect" onchange="nuevoJuego()">
+        <option value='nada'>Juego</option>
+        <option value='sumas1'>Sumas 1</option>
+        <option value='sumas2'>Sumas 2</option>
+        <option value='mult1'>Multiplicaciones: Tabla del 2</option>
+        <option value='mult2'>Multiplicaciones: Tabla del 3</option>
+        <option value='mult3'>Multiplicaciones: Tabla del 4</option>
+        <option value='mult4'>Multiplicaciones: Tabla del 5</option>
+        <option value='mult5'>Multiplicaciones: Tabla del 6</option>
+        <option value='mult6'>Multiplicaciones: Tabla del 7</option>
+        <option value='mult7'>Multiplicaciones: Tabla del 8</option>
+        <option value='mult8'>Multiplicaciones: Tabla del 9</option>
+        <option value='mult9'>Multiplicaciones: Tabla del 10</option>
+      </select>
+      <button class="button2 blue" onclick="muestraRankingPuntuaciones();">Puntuaciones</button>
+    </div>
+    <div id="divCanvas">
+      <canvas id='canvas'></canvas>
+    </div>
+    <div id="div2" style="visibility: hidden;">
+      <button class="button blueNumbers" onclick="ponNumero(0);">0</button>
+      <button class="button blueNumbers" onclick="ponNumero(1);">1</button>
+      <button class="button blueNumbers" onclick="ponNumero(2);">2</button>
+      <button class="button blueNumbers" onclick="ponNumero(3);">3</button>
+      <button class="button blueNumbers" onclick="ponNumero(4);">4</button>
+      <button class="button blueNumbers" onclick="ponNumero(5);">5</button>
+      <button class="button blueNumbers" onclick="ponNumero(6);">6</button>
+      <button class="button blueNumbers" onclick="ponNumero(7);">7</button>
+      <button class="button blueNumbers" onclick="ponNumero(8);">8</button>
+      <button class="button blueNumbers" onclick="ponNumero(9);">9</button>
+      <br>
+      <button id='borra' class="button2 green2" onclick="borraResultado();">Borra Resultado</button>
+      <button id='comprueba' class="button2 red" onclick="compruebaResultado();">Comprueba el Resultado</button>
+      <br>
+      <progress value="0" id="progressBar"></progress>
+      <div class="text" id="countdown"></div>
+    </div>
+  <body>
+
+</html>
